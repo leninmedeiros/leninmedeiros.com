@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+					$("img").mouseover(function(){
+						if ($(this).attr("clickable") == "true") {
+							console.log("entrou no mouseover");
+							$(this).css("-webkit-filter", "brightness(1) invert(0)");
+							$(this).css("filter", "brightness(1) invert(0)");
+						}
+					});
+					$("img").mouseout(function(){
+						if ($(this).attr("clickable") == "true") {
+							console.log("entrou no mouseout");
+							$(this).css("-webkit-filter", "brightness(0) invert(1)");
+							$(this).css("filter", "brightness(0) invert(1)");
+						}
+					});
+			    $("span").mouseover(function(){
+						if ($(this).attr("disabled") != "disabled") {
+							$(this).css("background", "#ffffff");
+						}
+			    });
+			    $("span").mouseout(function(){
+						if ($(this).attr("disabled") != "disabled") {
+			        $(this).css("background", "#c77bbe");
+						}
+			    });
+			});
+		</script>
+		<link rel="icon" href="images/me.ico">
+		<title>Lenin Medeiros</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+
+				<div class="inner">
+					<center>
+						<a href="#" class="image"><img src="images/me.jpg" alt="" data-position="center" border="5" width="70%" style="-webkit-filter: opacity(40%); filter: opacity(40%);"/></a>
+					</center>
+					<nav>
+						<ul>
+							<li><a href="#intro">Me</a></li>
+							<li><a href="#one">Things I'm doing</a></li>
+							<li><a href="#two">Education</a></li>
+							<li><a href="#three">Things I did</a></li>
+							<li><a href="#four">Publications</a></li>
+							<li><a href="#five">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Lenin Medeiros</h1>
+							<p>Sofware Engineer</p>
+							<p>PhD Candidate in Computer Science at VU University Amsterdam</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+
+							</ul>
+						</div>
+					</section>
+
+					<!-- One -->
+						<section id="one" class="wrapper style2 spotlights">
+							<section>
+								<a href="#" class="image"><img src="images/bi-logo.png" alt="" data-position="center" border="5"/></a>
+								<div class="content">
+									<div class="inner">
+										<h2>Behavioural Informatics Group</h2>
+										<p align="justify">I'm currently working together with researchers from the <a target="_blank" href="http://bi.cs.vu.nl/">Behavioural Informatics Group</a>, a research group from VU University Amsterdam, while developing my PhD thesis. This group focus on using Computer Science to understand (and provide improvments for) human processes. Mainly, I'm doing research about people coping with stress together on social networks and the role that artifical friends could play within this type of scenario. This will be the topic of my thesis.</sup></p>
+										<!--<ul class="actions">
+											<li><a href="#" class="button">Learn more</a></li>
+										</ul>-->
+									</div>
+								</div>
+							</section>
+							<section>
+								<a href="#" class="image"><img src="images/impact-logo.png" alt="" data-position="center" /></a>
+								<div class="content">
+									<div class="inner">
+										<h2>IMPACT</h2>
+										<p align="justify"> <a target="_blank" href="http://www.impact-csa.eu/">IMPACT</a> stands for Impact of Cultural Aspects in the Management of Emergencies in Public Transport. In this project, funded by the <a target="_blank" href="https://ec.europa.eu/programmes/horizon2020/">UE</a>, we are trying to use artificial intelligence to investigate the essential role played by cultural factors in managing safety and security issues related to emergencies in public transport systems.</p>
+										<!--<ul class="actions">
+											<li><a href="#" class="button">Learn more</a></li>
+										</ul>-->
+									</div>
+								</div>
+							</section>
+						</section>
+
+					<!-- Two -->
+						<section id="two" class="wrapper style2 spotlights">
+							<section>
+								<a href="#" class="image"><img src="images/vu-logo.png" alt="" data-position="center" border="5"/></a>
+								<div class="content">
+									<div class="inner">
+										<h2>VU University Amsterdam</h2>
+										<p align="justify">Since August 2015 I am a PhD candidade in Computer Science at the <a target="_blank" href="http://www.vu.nl/nl/index.aspx">VU University Amsterdam</a><sup><a href="#fn1" id="ref1">1</a></sup>. I'm planning to defend my PhD thesis until July 2019 and my supervisors are <a target="_blank" href="http://www.few.vu.nl/~treur/">Prof. Dr. Jan Treur</a> and <a target="_blank" href="http://www.few.vu.nl/~tbosse/">Dr. Tibor Bosse</a>.</p>
+
+										<p align="justify"><sup id="fn1"><font size="1">1. Funded by <a target="_blank" href="http://www.cienciasemfronteiras.gov.br/web/csf-eng/">Science without Borders</a> and <a target="_blank" href="http://www.cnpq.br/">CNPq</a>. Reference number: 235134/2014-7.<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup></font></p>
+										<center>
+											<a target="_blank" href="http://www.cienciasemfronteiras.gov.br/pt/web/csf-eng/"><img clickable="true" src="images/swb-logo.png" alt="" data-position="center" border="5" width="15%" style="-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);"/></a>
+											<img></img>
+											<img></img>
+											<a target="_blank" href="http://cnpq.br/"><img clickable="true" src="images/cnpq-logo.png" alt="" data-position="center" border="5" width="15%" style="-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);"/></a>
+										</center>
+									</div>
+								</div>
+							</section>
+							<section>
+								<a href="#" class="image"><img src="images/ufcg-logo.png" alt="" data-position="center" /></a>
+								<div class="content">
+									<div class="inner">
+										<h2>Federal University of Campina Grande</h2>
+										<p align="justify">I received my titles of B.Sc. and M.Sc. in Computer Science from the <a target="_blank" href="http://www.ufcg.edu.br/index1.php">Federal University of Campina Grande</a> in 2012 and 2015, respectively. During my Master's degree studies, I was supervised by <a target="_blank" href="http://www2.lsd.ufcg.edu.br/~nazareno/">Dr. Nazareno Andrade</a> and my thesis was evaluated by him, <a target="_blank" href="http://www2.joinville.udesc.br/~dcc2cdmb/">D.Sc. Carla Berkenbrock</a> and <a target="_blank" href="https://sites.google.com/site/joaoarthurbm/">Dr. João Brunet.</a></p>
+										<!--<ul class="actions">
+											<li><a href="#" class="button">Learn more</a></li>
+										</ul>-->
+									</div>
+								</div>
+							</section>
+						</section>
+
+					<!-- Three -->
+					<section id="three" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/lsd-logo.png" alt="" data-position="center" border="5"/></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Distributed Systems Lab</h2>
+									<p align="justify">During my Master's degree studies, I was a member of the <a target="_blank" href="http://www.lsd.ufcg.edu.br/">Distributed Systems Lab</a> from the <a target="_blank" href="http://www.computacao.ufcg.edu.br/"> Department of Computer Science</a> at the Federal University of Campina Grande. Using the infrastructure of this lab, I performed all the experiments that gave me the data I used for writing my thesis. Such work is about Computer Supported Cooperative Work (CSCW) and addresses the use of social networks in social Q&#38;A sites.</p>
+									<!--<ul class="actions">
+										<li><a href="#" class="button">Learn more</a></li>
+									</ul>-->
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/elife-logo.png" alt="" data-position="center" border="5"/></a>
+							<div class="content">
+								<div class="inner">
+									<h2>E.life Group</h2>
+									<p align="justify">From October 2013 until November 2014 I worked as software engineer at the <a target="_blank" href="http://elife.com.br/">E.life Group</a>. I collaborated with the development of the Buzzmonitor - a web-based low cost software to collect and classify data from social media and to interact with users. In this job I could work in a project using big data from social networks by developing a system on the cloud with lots of functionalities for so many different clients around the world. During this experience I realized that would be great to work with social networks and artificial intelligence.</p>
+									<!--<ul class="actions">
+										<li><a href="#" class="button">Learn more</a></li>
+									</ul>-->
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/ctec-logo.jpg" alt="" data-position="center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Campina Tec</h2>
+									<p align="justify">During my work at <a target="_blank" href="http://www.campinatec.com.br/">Campina Tec</a>, from October 2011 until July 2012, I worked as software engineer in the development of web-based softwares on demand that aim to improve industrial automation by managing sales and production. During this job I put my hands on systems using huge databases. Besides that I could learn how to better argue with real clients.</p>
+									<!--<ul class="actions">
+										<li><a href="#" class="button">Learn more</a></li>
+									</ul>-->
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/mppb-logo.png" alt="" data-position="center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Department of Technology at Para&iacute;ba’s District Attorneys' Office</h2>
+									<p align="justify">In 2011, from March to October, I worked as an intern in the <a target="_blank" href="http://www.mppb.mp.br/">Attorneys' Office of my home state, Para&iacute;ba (Brazil)</a>. I paticipated in the development of a web-based low cost software that aims to help prosecutors from the city of Campina Grande in getting involved with cases of unknown paternity by CRUD of these lawsuits on cloud. Since it was my first job experience, everything I did there was really important to show me how things happen in a real work environment.</p>
+									<!--<ul class="actions">
+										<li><a href="#" class="button">Learn more</a></li>
+									</ul>-->
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Four -->
+					<section id="four" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Research focus</h2>
+							<p align="justify">My current research is in the line of human-aware agents supporting people, often dealing with their social networks. My research interests are: human-aware computing, ambient intelligence, pervasive computing, ubiquitous computing, social networks, CSCW and computer-human interaction. Here comes a list with my last publications.</p>
+							<div class="features">
+								<section>
+									<a target="_blank" href="http://link.springer.com/chapter/10.1007/978-3-319-45243-2_6"><span style = "background: #c77bbe;" class="icon major fa-file-pdf-o"></span></a>
+									<h3 align="center">Modelling a Mutual Support Network for Coping with Stress</h3>
+									<p align="justify">Work sent and accepted to be published in the proceedings of ICCCI 2016. Written with Ruben Sikkes and Jan Treur.</p>
+								</section>
+								<section>
+									<span style = "background: #c77bbe;" disabled = "true" class="icon major fa-file-pdf-o" title = "Available soon!"></span>
+									<h3 align="center">Empirical Analysis of Social Support Provided via Social Media</h3>
+									<p align="justify">Work sent and accepted to be published in the proceedings of SocInfo 2016. Written with Tibor Bosse.</p>
+								</section>
+								<!-- <section>
+									<span class="icon major fa-cog"></span>
+									<h3>Sed erat ullam corper</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section> -->
+								<!-- <section>
+									<span class="icon major fa-desktop"></span>
+									<h3>Veroeros quis lorem</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section> -->
+								<!-- <section>
+									<span class="icon major fa-chain"></span>
+									<h3>Urna quis bibendum</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section> -->
+								<!-- <section>
+									<span class="icon major fa-diamond"></span>
+									<h3>Aliquam urna dapibus</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section> -->
+							</div>
+							<center>
+								<a target="_blank" href="http://lattes.cnpq.br/2972150828952394"><img clickable="true" src="images/lattes-logo.png" alt="" data-position="center" border="5" width="7%" style="-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);"/></a>
+								<a target="_blank" href="https://www.researchgate.net/profile/Lenin_Medeiros"><img src="images/research-gate-logo.png" clickable="true" alt="" data-position="center" border="5" width="3%" style="-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);"/></a>
+							</center>
+							<!-- <ul class="actions">
+								<li><a href="#" class="button">Learn more</a></li>
+							</ul> -->
+						</div>
+					</section>
+
+				<!-- Five -->
+					<section id="five" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Send me an message filling out this form or using the information below.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="field half first">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name"/>
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email"/>
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="5"></textarea>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span disabled = "true">Room T3.18<br />
+											De Boelelaan 1081<br />
+											1081 HV Amsterdam<br />
+											The Netherlands</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">l.medeiros@vu.nl</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span disabled = "true">+31 20 59 82807</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a target="_blank" href="https://www.linkedin.com/in/lenin-medeiros-6150709a" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+												<li><a target="_blank" href="https://twitter.com/leninnmedeiros" class="fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a target="_blank" href="https://open.spotify.com/user/lenin.medeiros" class="fa-spotify"><span class="label">Spotify</span></a></li>
+												<li><a target="_blank" href="https://www.facebook.com/LeninNMedeiros" class="fa-facebook"><span class="label">Facebook</span></a></li>
+												<li><a target="_blank" href="https://github.com/leninmedeiros" class="fa-github"><span class="label">GitHub</span></a></li>
+												<li><a target="_blank" href="https://www.instagram.com/leninmedeiros/" class="fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a target="_blank" href="https://plus.google.com/u/0/+LeninMedeiros" class="fa-google-plus"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Copyright 2016 Lenin Medeiros. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> and Lenin Medeiros.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
