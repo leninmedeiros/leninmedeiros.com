@@ -3036,6 +3036,17 @@
 				display: block;
 			}
 
+			.header-logo {
+    		/*height: 61px;*/
+    		background-color: #0cb;
+    		/*display: inline-block;*/
+    		font-size: 0rem;
+    		/*font-family: "Rosalind Serif",Georgia,serif;*/
+    		/*width: 60px;*/
+    		/*text-align: center;*/
+    		/*margin-right: 40px;*/
+			}
+
 			.spotlights > section > .image:before {
 				-moz-transition: opacity 1s ease;
 				-webkit-transition: opacity 1s ease;

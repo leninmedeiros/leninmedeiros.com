@@ -13,16 +13,25 @@
 		$(document).ready(function(){
 				$("img").mouseover(function(){
 					if ($(this).attr("clickable") == "true") {
-						console.log("entrou no mouseover");
-						$(this).css("-webkit-filter", "brightness(1) invert(0)");
-						$(this).css("filter", "brightness(1) invert(0)");
+						if ($(this).attr("id") == "research-gate") {
+							document.getElementById("research-gate").setAttribute("class", "header-logo");
+							// document.getElementById("research-gate").setAttribute("width", "2%");
+							// $(this).css("height: 61px","background-color: #0cb", "display: inline-block", "font-size: 0.375rem;", "font-family: 'Rosalind Serif',Georgia,serif;", "width: 60px;", "text-align: center;", "margin-right: 40px");
+						} else {
+								$(this).css("-webkit-filter", "brightness(1) invert(0)");
+								$(this).css("filter", "brightness(1) invert(0)");
+							}
 					}
 				});
 				$("img").mouseout(function(){
 					if ($(this).attr("clickable") == "true") {
-						console.log("entrou no mouseout");
-						$(this).css("-webkit-filter", "brightness(0) invert(1)");
-						$(this).css("filter", "brightness(0) invert(1)");
+						if ($(this).attr("id") == "research-gate") {
+							document.getElementById("research-gate").setAttribute("class", "no-class");
+							// document.getElementById("research-gate").setAttribute("width", "2%");
+						} else {
+							$(this).css("-webkit-filter", "brightness(0) invert(1)");
+							$(this).css("filter", "brightness(0) invert(1)");
+						}
 					}
 				});
 				$("span").mouseover(function(){
@@ -231,9 +240,9 @@
 											<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 										</section> -->
 									</div>
-									<center>
-										<a target="_blank" href="http://lattes.cnpq.br/2972150828952394"><img clickable="true" src="images/lattes-logo.png" alt="" data-position="center" border="5" width="7%" style="-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);"/></a>
-										<a target="_blank" href="https://www.researchgate.net/profile/Lenin_Medeiros"><img src="images/research-gate-logo.png" clickable="true" alt="" data-position="center" border="5" width="3%" style="-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);"/></a>
+									<center float="left">
+										<a target="_blank" href="http://lattes.cnpq.br/2972150828952394"><img clickable="true" src="images/lattes-logo.png" alt="" data-position="center" border="5" width="5%" style="-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);"/></a>
+										<a target="_blank" href="https://www.researchgate.net/profile/Lenin_Medeiros"><img id="research-gate" src="images/research-gate3.svg" clickable="true" alt="" data-position="center" border="5" width="1.8%" title="See my Research Gate profile."/></a>
 									</center>
 									<!-- <ul class="actions">
 										<li><a href="#" class="button">Learn more</a></li>
